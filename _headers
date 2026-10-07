@@ -1,0 +1,26 @@
+# Cabeçalhos HTTP para hospedagens estáticas que leem o arquivo "_headers"
+# (Cloudflare Pages e Netlify). Em outras hospedagens (Vercel, Apache, Nginx),
+# configure os mesmos cabeçalhos no painel/arquivo de configuração.
+#
+# Teste antes de publicar: abra o site e confira o console do navegador. Se aparecer
+# "Refused to ... because it violates the Content-Security-Policy", ajuste a política abaixo.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/assets/*
+  Cache-Control: public, max-age=604800

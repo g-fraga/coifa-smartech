@@ -1,0 +1,11 @@
+# Arquivos locais / temporários
+.claude/
+smartech-site.zip
+_backup/
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+node_modules/

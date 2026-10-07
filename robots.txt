@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_backup/
+Disallow: /tests/
+
+# Quando o domínio estiver definido, publique um sitemap.xml e descomente:
+# Sitemap: https://SEU-DOMINIO/sitemap.xml

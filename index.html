@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smartech Coifas | Coifas Industriais e Tecnologia UV-C em Florianópolis</title>
+  <meta name="description" content="Coifas industriais sob medida em inox AISI 304 com tecnologia UV-C, projetadas conforme a NBR 14518. Restaurantes, hotéis, supermercados e indústrias em Santa Catarina.">
+  <meta name="theme-color" content="#0c1012">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Smartech Coifas">
+  <meta property="og:title" content="Smartech Coifas | Coifas industriais com tecnologia UV-C">
+  <meta property="og:description" content="Coifas industriais sob medida em inox AISI 304 com tecnologia UV-C. Projeto, instalação e suporte técnico em Santa Catarina.">
+  <!-- Para pré-visualização em redes sociais, publique uma imagem 1200x630 e adicione:
+       <meta property="og:image" content="https://SEU-DOMINIO/assets/og-cover.jpg"> -->
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&amp;family=Plus+Jakarta+Sans:wght@500..800&amp;display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Minúsculo e síncrono: define html.js / html.has-motion antes da primeira pintura -->
+  <script src="js/boot.js"></script>
+
+  <!-- Bibliotecas de animação (versões fixas + SRI). O three.js é carregado sob demanda por js/viewer3d.js -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha384-poC0r6usQOX2Ayt/VGA+t81H6V3iN9L+Irz9iO8o+s0X20tLpzc9DOOtnKxhaQSE" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="js/calc-core.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/calculator.js"></script>
+  <script defer src="js/motion.js"></script>
+  <script defer src="js/viewer3d.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Smartech Coifas",
+    "description": "Coifas industriais sob medida em inox AISI 304 com tecnologia UV-C.",
+    "telephone": "+55 48 99180-9488",
+    "email": "contato@smartechcoifas.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Florianópolis", "addressRegion": "SC", "addressCountry": "BR" },
+    "areaServed": { "@type": "State", "name": "Santa Catarina" },
+    "sameAs": ["https://www.instagram.com/smartechcoifas"]
+  }
+  </script>
+</head>
+
+<body data-wa="5548991809488">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- Sprite de ícones e artes reutilizáveis -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g-brand" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#fceb0d"/><stop offset=".45" stop-color="#fad514"/><stop offset="1" stop-color="#f3b320"/>
+      </linearGradient>
+      <linearGradient id="g-art-bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#1c2427"/><stop offset="1" stop-color="#0c1012"/>
+      </linearGradient>
+    </defs>
+
+    <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+    <symbol id="i-explode" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></symbol>
+    <symbol id="i-move" viewBox="0 0 24 24"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></symbol>
+    <symbol id="i-chevrons" viewBox="0 0 24 24"><polyline points="9 6 3 12 9 18"/><polyline points="15 6 21 12 15 18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+
+    <!-- Arte abstrata (linhas de fluxo de ar) para os cartões de projeto -->
+    <symbol id="art-airflow" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice">
+      <rect width="400" height="240" fill="url(#g-art-bg)"/>
+      <g fill="none" stroke="url(#g-brand)" stroke-linecap="round">
+        <path d="M-10 200 C 80 200 110 120 200 120 S 320 40 410 40" stroke-width="3" opacity=".95"/>
+        <path d="M-10 224 C 90 224 120 148 210 148 S 330 70 410 70" stroke-width="2.5" opacity=".6"/>
+        <path d="M-10 176 C 70 176 100 92 190 92 S 310 14 410 14" stroke-width="2" opacity=".4"/>
+        <path d="M-10 238 C 100 238 130 176 220 176 S 340 100 410 100" stroke-width="1.5" opacity=".28"/>
+      </g>
+      <circle cx="318" cy="52" r="64" fill="none" stroke="#fad514" stroke-opacity=".18" stroke-width="1.5"/>
+      <circle cx="318" cy="52" r="40" fill="none" stroke="#fad514" stroke-opacity=".12" stroke-width="1.5"/>
+    </symbol>
+  </svg>
+
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__bar">
+      <a class="brand" href="#hero" aria-label="Smartech Coifas — voltar ao início">
+        <span class="brand__plate"><img src="assets/logo-smartech.png" alt="Smartech" width="468" height="195"></span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#showroom">Visualizador 3D</a></li>
+          <li><a href="#uvtech">Tecnologia UV-C</a></li>
+          <li><a href="#calculator">Calculadora</a></li>
+          <li><a href="#cases">Projetos</a></li>
+          <li><a href="#about">Sobre</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="btn btn--gold btn--sm site-header__cta" href="#contact" data-wa-link>
+          <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          <span>(48) 99180-9488</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menu">
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+    <nav aria-label="Menu mobile" class="mobile-menu__nav">
+      <ul>
+        <li><a href="#showroom">Visualizador 3D <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="#uvtech">Tecnologia UV-C <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="#calculator">Calculadora <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="#cases">Projetos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+        <li><a href="#about">Sobre <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a class="btn btn--gold btn--lg btn--block" href="#contact">Solicitar orçamento</a>
+      <a class="btn btn--ghost btn--block" href="https://wa.me/5548991809488" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> (48) 99180-9488
+      </a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" class="hero theme-dark" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__slab hero__slab--a" data-parallax="0.4"></span>
+        <span class="hero__slab hero__slab--b" data-parallax="0.2"></span>
+        <span class="hero__glow" data-parallax="-0.25"></span>
+        <svg class="hero__flow" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" fill="none" stroke="url(#g-brand)" stroke-linecap="round">
+          <path d="M-40 700 C 240 700 300 460 560 460 S 900 200 1240 200" stroke-width="2"/>
+          <path d="M-40 760 C 260 760 340 520 600 520 S 940 260 1240 260" stroke-width="1.5" opacity=".6"/>
+          <path d="M-40 640 C 220 640 280 400 520 400 S 860 140 1240 140" stroke-width="1.5" opacity=".45"/>
+          <path d="M-40 800 C 280 800 380 580 640 580 S 980 320 1240 320" stroke-width="1" opacity=".3"/>
+        </svg>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-hero>Coifas industriais · Florianópolis, SC</p>
+          <h1 id="hero-title" class="hero__title" data-split>Exaustão profissional com <em class="text-brand">tecnologia UV-C</em> para a sua cozinha.</h1>
+          <p class="hero__lead" data-hero>Coifas industriais sob medida em inox AISI 304, com fotólise e ozonólise UV-C para reduzir gordura e odores nos dutos. Projeto, instalação e suporte técnico para restaurantes, hotéis, supermercados e indústrias.</p>
+          <div class="hero__cta" data-hero>
+            <a class="btn btn--gold btn--lg" href="#contact">Solicitar orçamento <svg class="icon icon-nudge" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost btn--lg" href="#showroom"><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg> Explorar em 3D</a>
+          </div>
+          <ul class="hero__trust" data-hero>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><span>Projetos conforme NBR 14518</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>Responsabilidade técnica ART/CREA</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>Atendimento em todo o estado de SC</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__stage">
+          <div class="viewer viewer--hero" id="heroViewer" data-viewer="hero" data-hero>
+            <div class="viewer__poster" aria-hidden="true">
+              <svg viewBox="0 0 600 440" fill="none">
+                <defs>
+                  <linearGradient id="pz-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8ecee"/><stop offset=".5" stop-color="#a5afb4"/><stop offset="1" stop-color="#566066"/></linearGradient>
+                  <linearGradient id="pz-top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cdd4d7"/><stop offset="1" stop-color="#7c888e"/></linearGradient>
+                  <radialGradient id="pz-uv" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#9a86ff" stop-opacity=".55"/><stop offset="1" stop-color="#9a86ff" stop-opacity="0"/></radialGradient>
+                  <radialGradient id="pz-floor" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#000" stop-opacity=".55"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+                </defs>
+                <ellipse cx="300" cy="380" rx="230" ry="26" fill="url(#pz-floor)"/>
+                <ellipse cx="300" cy="278" rx="190" ry="40" fill="url(#pz-uv)"/>
+                <rect x="268" y="62" width="64" height="62" rx="8" fill="url(#pz-top)"/>
+                <rect x="262" y="104" width="76" height="12" rx="3" fill="url(#g-brand)"/>
+                <polygon points="190,124 410,124 450,150 150,150" fill="url(#pz-top)"/>
+                <polygon points="150,150 450,150 500,236 100,236" fill="url(#pz-steel)"/>
+                <rect x="100" y="236" width="400" height="22" rx="4" fill="#3a4247"/>
+                <rect x="100" y="254" width="400" height="5" rx="2" fill="url(#g-brand)"/>
+              </svg>
+            </div>
+            <div class="viewer__canvas" tabindex="0" role="img" aria-label="Modelo 3D interativo de uma coifa industrial. Arraste para girar ou use as setas do teclado."></div>
+            <div class="viewer__status" role="status" aria-live="polite"><span class="viewer__spinner" aria-hidden="true"></span><span class="viewer__status-text">Carregando modelo 3D…</span></div>
+            <button class="viewer__load btn btn--ghost btn--sm" type="button" hidden>Ativar visualização 3D</button>
+            <p class="viewer__hint"><svg class="icon" aria-hidden="true"><use href="#i-move"/></svg> Arraste para girar</p>
+            <button class="viewer__chip" type="button" data-action="uv" aria-pressed="false" hidden>
+              <svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg> Luz UV-C
+            </button>
+          </div>
+          <ul class="hero__chips" aria-hidden="true">
+            <li class="hero__chip hero__chip--a" data-hero="fade" data-parallax="0.35">Inox AISI 304</li>
+            <li class="hero__chip hero__chip--b" data-hero="fade" data-parallax="-0.3">UV-C 254 nm</li>
+            <li class="hero__chip hero__chip--c" data-hero="fade" data-parallax="0.25">NBR 14518</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#showroom" aria-label="Rolar para o visualizador 3D"><span></span></a>
+    </section>
+
+    <!-- Faixa de especificações (movimento acompanha a velocidade da rolagem) -->
+    <div class="marquee" role="region" aria-label="Especificações em destaque">
+      <div class="marquee__track">
+        <ul class="marquee__list">
+          <li>Inox AISI 304</li><li>UV-C 254 nm / 185 nm</li><li>Projeto conforme NBR 14518</li><li>Filtros baffle laváveis</li><li>ART / CREA</li><li>Suporte técnico presencial em SC</li><li>Projetos sob medida</li>
+        </ul>
+        <ul class="marquee__list" aria-hidden="true">
+          <li>Inox AISI 304</li><li>UV-C 254 nm / 185 nm</li><li>Projeto conforme NBR 14518</li><li>Filtros baffle laváveis</li><li>ART / CREA</li><li>Suporte técnico presencial em SC</li><li>Projetos sob medida</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ===================== SHOWROOM 3D ===================== -->
+    <section id="showroom" class="section showroom theme-dark" aria-labelledby="showroom-title">
+      <div class="container">
+        <header class="section__head" data-stagger>
+          <p class="eyebrow">Engenharia virtual 3D</p>
+          <h2 id="showroom-title">Veja a coifa por dentro antes de fabricar.</h2>
+          <p class="section__lead">Gire o modelo, separe as peças em vista explodida, ative a luz UV-C e simule a captação da fumaça — tudo em tempo real, direto no navegador.</p>
+        </header>
+
+        <div class="showroom__grid">
+          <div class="showroom__stage" data-reveal="wipe">
+            <div class="viewer viewer--main" id="mainViewer" data-viewer="main">
+              <div class="viewer__poster" aria-hidden="true">
+                <svg viewBox="0 0 600 440" fill="none">
+                  <ellipse cx="300" cy="380" rx="230" ry="26" fill="url(#pz-floor)"/>
+                  <ellipse cx="300" cy="278" rx="190" ry="40" fill="url(#pz-uv)"/>
+                  <rect x="268" y="62" width="64" height="62" rx="8" fill="url(#pz-top)"/>
+                  <polygon points="190,124 410,124 450,150 150,150" fill="url(#pz-top)"/>
+                  <polygon points="150,150 450,150 500,236 100,236" fill="url(#pz-steel)"/>
+                  <rect x="100" y="236" width="400" height="22" rx="4" fill="#3a4247"/>
+                  <rect x="100" y="254" width="400" height="5" rx="2" fill="url(#g-brand)"/>
+                </svg>
+              </div>
+              <div class="viewer__canvas" tabindex="0" role="img" aria-label="Visualizador 3D interativo. Arraste ou use as setas do teclado para girar; mais e menos para aproximar. Os botões controlam vista explodida, luz UV-C e fumaça."></div>
+              <div class="viewer__status" role="status" aria-live="polite"><span class="viewer__spinner" aria-hidden="true"></span><span class="viewer__status-text">Carregando modelo 3D…</span></div>
+              <button class="viewer__load btn btn--ghost btn--sm" type="button" hidden>Ativar visualização 3D</button>
+
+              <div class="viewer__bar viewer__bar--top">
+                <span class="viewer__label" id="modelLabel" aria-live="polite">Coifa de parede UV-C</span>
+                <div class="segmented" role="group" aria-label="Modo de visualização">
+                  <button type="button" data-view="solid" aria-pressed="true">Sólido inox</button>
+                  <button type="button" data-view="xray" aria-pressed="false">Raio-X</button>
+                </div>
+              </div>
+
+              <div class="viewer__bar viewer__bar--bottom">
+                <div class="viewer__tools" role="group" aria-label="Controles do modelo">
+                  <button type="button" class="tool" data-action="explode" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-explode"/></svg><span>Vista explodida</span></button>
+                  <button type="button" class="tool tool--uv" data-action="uv" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg><span>Luz UV-C</span></button>
+                  <button type="button" class="tool" data-action="smoke" aria-pressed="true"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg><span>Fumaça</span></button>
+                </div>
+                <div class="viewer__tools" role="group" aria-label="Câmera">
+                  <button type="button" class="tool tool--icon" data-action="zoom-out" aria-label="Afastar"><svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg></button>
+                  <button type="button" class="tool tool--icon" data-action="zoom-in" aria-label="Aproximar"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+                  <button type="button" class="tool tool--icon" data-action="reset" aria-label="Restaurar câmera"><svg class="icon" aria-hidden="true"><use href="#i-reset"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="showroom__panel" aria-label="Modelos e especificações" data-stagger>
+            <div class="card panel">
+              <h3 class="panel__title"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg> Selecione o modelo</h3>
+              <div class="models" role="group" aria-label="Modelos 3D">
+                <button type="button" class="model-btn" data-model="1" aria-pressed="true">
+                  <span class="model-btn__icon"><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg></span>
+                  <span><strong>Coifa de parede UV-C</strong><small>Lâmpadas fotolíticas e filtros baffle</small></span>
+                </button>
+                <button type="button" class="model-btn" data-model="2" aria-pressed="false">
+                  <span class="model-btn__icon"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg></span>
+                  <span><strong>Sistema de exaustão completo</strong><small>Coifa + dutos + caixa exaustora centrífuga</small></span>
+                </button>
+                <button type="button" class="model-btn" data-model="3" aria-pressed="false">
+                  <span class="model-btn__icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
+                  <span><strong>Coifa central de ilha</strong><small>Filtros baffle defletores duplos</small></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="card panel">
+              <h3 class="panel__title"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Especificações</h3>
+              <dl class="specs" id="specList">
+                <div><dt>Material</dt><dd>Aço inox AISI 304 escovado</dd></div>
+                <div><dt>Filtros</dt><dd>Baffle inerciais, laváveis</dd></div>
+                <div><dt>Tecnologia UV-C</dt><dd>Lâmpadas tubulares 254 nm / 185 nm</dd></div>
+                <div><dt>Instalação</dt><dd>Encostada na parede</dd></div>
+              </dl>
+              <a class="btn btn--gold btn--block" href="#calculator">Dimensionar para a minha cozinha <svg class="icon icon-nudge" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPARATIVO UV-C ===================== -->
+    <section id="comparativo" class="section section--slash compare theme-light" aria-labelledby="compare-title">
+      <div class="container compare__grid">
+        <div class="compare__copy" data-stagger>
+          <p class="eyebrow">Tecnologia fotolítica e ozonólise</p>
+          <h2 id="compare-title">Menos gordura nos dutos. Mais segurança na cozinha.</h2>
+          <p class="section__lead">Nas coifas convencionais, o vapor de gordura adere às paredes do duto, aumentando o risco de incêndio e exigindo limpezas frequentes. Com a tecnologia UV-C da Smartech, gordura e odores são tratados antes de seguir pela tubulação — reduzindo o acúmulo e a frequência de manutenção.</p>
+          <ul class="compare__cards">
+            <li class="status status--bad">
+              <span class="status__icon"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg></span>
+              <div><h3>Sem UV-C (convencional)</h3><p>Acúmulo de gordura nas paredes do duto, maior risco de incêndio e odor na vizinhança.</p></div>
+            </li>
+            <li class="status status--good">
+              <span class="status__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <div><h3>Com UV-C Smartech</h3><p>Dutos mais limpos por mais tempo, menos paradas para raspagem e menos odor na saída.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="compare__figure" data-reveal="wipe">
+          <div class="cmp" id="cmp" role="group" aria-label="Comparativo ilustrativo entre duto convencional e duto com UV-C">
+            <div class="cmp__layer cmp__layer--clean">
+              <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="cm-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2427"/><stop offset="1" stop-color="#0c1012"/></linearGradient>
+                  <linearGradient id="cm-steel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8ecee"/><stop offset=".18" stop-color="#a5afb4"/><stop offset=".5" stop-color="#566066"/><stop offset=".82" stop-color="#a5afb4"/><stop offset="1" stop-color="#e8ecee"/></linearGradient>
+                  <linearGradient id="cm-cavity" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#070a0b"/><stop offset=".5" stop-color="#141b1e"/><stop offset="1" stop-color="#070a0b"/></linearGradient>
+                  <linearGradient id="cm-flange" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c888e"/><stop offset=".5" stop-color="#e8ecee"/><stop offset="1" stop-color="#7c888e"/></linearGradient>
+                  <radialGradient id="cm-uv" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#9a86ff" stop-opacity=".75"/><stop offset="1" stop-color="#9a86ff" stop-opacity="0"/></radialGradient>
+                </defs>
+                <rect width="800" height="520" fill="url(#cm-bg)"/>
+                <rect x="-20" y="110" width="840" height="300" fill="url(#cm-steel)"/>
+                <rect x="-20" y="150" width="840" height="220" fill="url(#cm-cavity)"/>
+                <ellipse cx="400" cy="260" rx="420" ry="90" fill="url(#cm-uv)"/>
+                <rect x="40" y="254" width="720" height="8" rx="4" fill="#e9e4ff"/>
+                <rect x="40" y="250" width="720" height="16" rx="8" fill="#9a86ff" opacity=".35"/>
+                <g fill="#c7bbff"><circle cx="150" cy="200" r="3"/><circle cx="260" cy="320" r="2.5"/><circle cx="380" cy="190" r="3.5"/><circle cx="500" cy="330" r="2.5"/><circle cx="620" cy="205" r="3"/><circle cx="700" cy="310" r="2"/></g>
+                <rect x="150" y="96" width="26" height="328" rx="7" fill="url(#cm-flange)"/>
+                <rect x="624" y="96" width="26" height="328" rx="7" fill="url(#cm-flange)"/>
+              </svg>
+              <span class="cmp__tag cmp__tag--right"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> Duto com UV-C <small>Superfície limpa</small></span>
+            </div>
+
+            <div class="cmp__layer cmp__layer--dirty">
+              <svg viewBox="0 0 800 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="cd-grease" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b4a12"/><stop offset="1" stop-color="#2e1d05"/></linearGradient>
+                  <linearGradient id="cd-smoke" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a2a10" stop-opacity=".0"/><stop offset=".5" stop-color="#3a2a10" stop-opacity=".55"/><stop offset="1" stop-color="#3a2a10" stop-opacity="0"/></linearGradient>
+                </defs>
+                <rect width="800" height="520" fill="url(#cm-bg)"/>
+                <rect x="-20" y="110" width="840" height="300" fill="url(#cm-steel)"/>
+                <rect x="-20" y="150" width="840" height="220" fill="#0b0805"/>
+                <!-- crosta de gordura no topo -->
+                <path d="M-20 150 H820 V196 C 770 222 730 190 690 214 C 640 244 590 198 540 220 C 490 244 440 196 390 218 C 340 240 290 192 240 214 C 190 236 140 194 90 216 C 50 232 10 206 -20 220 Z" fill="url(#cd-grease)"/>
+                <!-- crosta no fundo -->
+                <path d="M-20 370 H820 V318 C 770 292 730 326 690 304 C 640 276 590 322 540 300 C 490 276 440 324 390 302 C 340 280 290 328 240 306 C 190 284 140 326 90 304 C 50 288 10 314 -20 300 Z" fill="url(#cd-grease)"/>
+                <!-- gotas -->
+                <g fill="#6b4a12"><path d="M240 214 q-9 34 0 44 q9 -10 0 -44z"/><path d="M540 220 q-8 40 0 54 q8 -14 0 -54z"/><path d="M390 218 q-7 28 0 36 q7 -8 0 -36z"/><path d="M690 214 q-8 30 0 40 q8 -10 0 -40z"/><path d="M90 216 q-7 26 0 34 q7 -8 0 -34z"/></g>
+                <rect x="-20" y="150" width="840" height="220" fill="url(#cd-smoke)"/>
+                <rect x="150" y="96" width="26" height="328" rx="7" fill="url(#cm-flange)"/>
+                <rect x="624" y="96" width="26" height="328" rx="7" fill="url(#cm-flange)"/>
+              </svg>
+              <span class="cmp__tag cmp__tag--left"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg> Duto convencional <small>Crosta de gordura</small></span>
+            </div>
+
+            <div class="cmp__handle" id="cmpHandle" role="slider" tabindex="0" aria-label="Comparar duto convencional e duto com UV-C" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50% duto convencional">
+              <span class="cmp__grip"><svg class="icon" aria-hidden="true"><use href="#i-chevrons"/></svg></span>
+            </div>
+          </div>
+          <figcaption>Ilustração esquemática. Arraste, ou use as setas do teclado, para comparar. Os resultados variam conforme o projeto e a manutenção.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESSO UV-C ===================== -->
+    <section id="uvtech" class="section process theme-dark" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head" data-stagger>
+          <p class="eyebrow">Processo fotoquímico integrado</p>
+          <h2 id="process-title">Como funciona o ciclo de exaustão UV-C</h2>
+          <p class="section__lead">Do ar carregado de gordura à exaustão tratada, etapa por etapa — dimensionada conforme a NBR 14518.</p>
+        </header>
+
+        <div class="process__layout">
+          <div class="process__sticky">
+            <figure class="flow" id="flow" data-stage="1">
+              <svg viewBox="0 0 420 560" role="img" aria-label="Diagrama do ciclo de exaustão em quatro etapas: filtros baffle, lâmpadas UV-C, ozonólise e exaustão tratada.">
+                <defs>
+                  <linearGradient id="fl-pipe" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a3438"/><stop offset=".5" stop-color="#566066"/><stop offset="1" stop-color="#2a3438"/></linearGradient>
+                  <!-- cor das partículas conforme a altura (espaço de usuário fixo) -->
+                  <linearGradient id="fl-particle" gradientUnits="userSpaceOnUse" x1="0" y1="550" x2="0" y2="10">
+                    <stop offset="0" stop-color="#8a959b"/><stop offset=".22" stop-color="#a39a7a"/>
+                    <stop offset=".34" stop-color="#fad514"/><stop offset=".5" stop-color="#9a86ff"/>
+                    <stop offset=".7" stop-color="#3ddcff"/><stop offset=".86" stop-color="#3ddc97"/>
+                  </linearGradient>
+                </defs>
+                <rect class="flow__pipe" x="26" y="10" width="28" height="540" rx="14" fill="url(#fl-pipe)"/>
+                <g class="flow__zone" data-zone="1"><path d="M54 480 H84"/><rect x="84" y="426" width="320" height="108" rx="22"/><text x="108" y="474" class="flow__num">01</text><text x="168" y="470" class="flow__label">Filtros baffle</text><text x="168" y="494" class="flow__sub">Captura inercial</text></g>
+                <g class="flow__zone" data-zone="2"><path d="M54 346 H84"/><rect x="84" y="292" width="320" height="108" rx="22"/><text x="108" y="340" class="flow__num">02</text><text x="168" y="336" class="flow__label">Lâmpadas UV-C</text><text x="168" y="360" class="flow__sub">Fotólise · 254 nm</text></g>
+                <g class="flow__zone" data-zone="3"><path d="M54 212 H84"/><rect x="84" y="158" width="320" height="108" rx="22"/><text x="108" y="206" class="flow__num">03</text><text x="168" y="202" class="flow__label">Ozonólise</text><text x="168" y="226" class="flow__sub">Oxidação · 185 nm</text></g>
+                <g class="flow__zone" data-zone="4"><path d="M54 78 H84"/><rect x="84" y="24" width="320" height="108" rx="22"/><text x="108" y="72" class="flow__num">04</text><text x="168" y="68" class="flow__label">Exaustão tratada</text><text x="168" y="92" class="flow__sub">Ar com menos odor</text></g>
+                <g class="flow__particles" fill="url(#fl-particle)">
+                  <circle cx="40" cy="540" r="4.5"><animate attributeName="cy" from="548" to="14" dur="5.4s" begin="0s" repeatCount="indefinite"/></circle>
+                  <circle cx="34" cy="540" r="3"><animate attributeName="cy" from="548" to="14" dur="5.4s" begin="-0.9s" repeatCount="indefinite"/></circle>
+                  <circle cx="46" cy="540" r="3.5"><animate attributeName="cy" from="548" to="14" dur="5.4s" begin="-1.8s" repeatCount="indefinite"/></circle>
+                  <circle cx="40" cy="540" r="4"><animate attributeName="cy" from="548" to="14" dur="5.4s" begin="-2.7s" repeatCount="indefinite"/></circle>
+                  <circle cx="35" cy="540" r="3.5"><animate attributeName="cy" from="548" to="14" dur="5.4s" begin="-3.6s" repeatCount="indefinite"/></circle>
+                  <circle cx="45" cy="540" r="3"><animate attributeName="cy" from="548" to="14" dur="5.4s" begin="-4.5s" repeatCount="indefinite"/></circle>
+                </g>
+              </svg>
+            </figure>
+          </div>
+
+          <div class="process__list">
+          <span class="process__track" aria-hidden="true"><span class="process__fill"></span></span>
+          <ol class="process__steps" id="processSteps">
+            <li class="step is-active" data-step="1">
+              <span class="step__num" aria-hidden="true">01</span>
+              <h3>Captura inercial</h3>
+              <p>O ar engordurado gerado pela cocção é aspirado e passa pelos filtros baffle, que retêm as gotículas maiores de gordura.</p>
+            </li>
+            <li class="step" data-step="2">
+              <span class="step__num" aria-hidden="true">02</span>
+              <h3>Fotólise UV-C (254 nm)</h3>
+              <p>A radiação UV-C rompe cadeias orgânicas do vapor de gordura e inativa bactérias e fungos suspensos no fluxo de ar.</p>
+            </li>
+            <li class="step" data-step="3">
+              <span class="step__num" aria-hidden="true">03</span>
+              <h3>Ozonólise (185 nm)</h3>
+              <p>O comprimento de onda de 185 nm reage com o oxigênio do ar e forma ozônio (O₃), que oxida os compostos orgânicos voláteis restantes.</p>
+            </li>
+            <li class="step" data-step="4">
+              <span class="step__num" aria-hidden="true">04</span>
+              <h3>Exaustão tratada</h3>
+              <p>O ar é descarregado com menos odor e menos resíduo oleoso, preservando o exaustor, os dutos e o entorno.</p>
+            </li>
+          </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CALCULADORA ===================== -->
+    <section id="calculator" class="section section--slash calc theme-light" aria-labelledby="calc-title">
+      <div class="container">
+        <header class="section__head section__head--center" data-stagger>
+          <p class="eyebrow">Pré-dimensionamento de exaustão</p>
+          <h2 id="calc-title">Calculadora de vazão e potência</h2>
+          <p class="section__lead">Estime a vazão de ar (m³/h e CFM), o motor e o duto para a sua cozinha comercial. O dimensionamento final é feito em projeto, com responsável técnico.</p>
+        </header>
+
+        <div class="calc__grid">
+          <form class="card calc__form" id="calcForm" novalidate data-reveal="left" aria-label="Parâmetros do equipamento e da coifa">
+            <h3 class="panel__title"><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg> Parâmetros do equipamento e da coifa</h3>
+
+            <div class="calc__row calc__row--stack">
+              <div class="field">
+                <label for="c-equip">Equipamento principal</label>
+                <select class="select" id="c-equip" name="equip">
+                  <option value="parrilla">Grelha / churrasqueira (carga alta)</option>
+                  <option value="chapa" selected>Chapa e fritadeiras (carga média/alta)</option>
+                  <option value="forno">Forno combinado / fogão industrial (carga média)</option>
+                  <option value="caldeira">Caldeira / panela de cozimento (carga leve)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="c-hood">Instalação da coifa</label>
+                <select class="select" id="c-hood" name="hood">
+                  <option value="parede" selected>Coifa de parede (1 face aberta)</option>
+                  <option value="ilha">Coifa de ilha (4 faces abertas)</option>
+                  <option value="baixa">Coifa prismática baixa (close-coupled)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calc__row">
+              <div class="field">
+                <label for="c-length">Comprimento da coifa <output id="c-length-out" for="c-length">2,5 m</output></label>
+                <input class="range" type="range" id="c-length" name="length" min="1" max="6" step="0.1" value="2.5">
+              </div>
+              <div class="field">
+                <label for="c-width">Largura / profundidade <output id="c-width-out" for="c-width">1,1 m</output></label>
+                <input class="range" type="range" id="c-width" name="width" min="0.8" max="2.2" step="0.1" value="1.1">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="c-hours">Operação diária da cozinha <output id="c-hours-out" for="c-hours">12 h/dia</output></label>
+              <input class="range" type="range" id="c-hours" name="hours" min="4" max="24" step="1" value="12">
+            </div>
+          </form>
+
+          <div class="card calc__results theme-dark" data-reveal="right">
+            <h3 class="panel__title"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg> Resultado do pré-dimensionamento</h3>
+
+            <div class="results">
+              <div class="result result--main">
+                <p class="result__label">Vazão recomendada</p>
+                <p class="result__value"><span id="r-m3" data-num>6.050</span> <small>m³/h</small></p>
+                <div class="gauge" aria-hidden="true"><span class="gauge__fill" id="r-gauge"></span></div>
+              </div>
+              <div class="result"><p class="result__label">Vazão em CFM</p><p class="result__value"><span id="r-cfm" data-num>3.561</span> <small>CFM</small></p></div>
+              <div class="result"><p class="result__label">Motor estimado</p><p class="result__value"><span id="r-cv" data-num>2</span> <small>CV</small></p></div>
+              <div class="result"><p class="result__label">Duto (Ø comercial)</p><p class="result__value"><span id="r-duct" data-num>500</span> <small>mm</small></p></div>
+              <div class="result"><p class="result__label">Velocidade no duto</p><p class="result__value"><span id="r-vel" data-num>8,6</span> <small>m/s</small></p></div>
+            </div>
+
+            <p class="calc__note">Pré-dimensionamento estimado (perda de carga do sistema de 450 Pa e rendimento de 60%). O dimensionamento final depende de projeto assinado por responsável técnico.</p>
+
+            <div class="calc__saving">
+              <p><strong>Economia anual estimada em limpeza com UV-C</strong> <span class="tag">ilustrativa</span></p>
+              <p class="calc__saving-value" id="r-savings">R$ 7.950 / ano</p>
+              <p class="calc__saving-note">Estimativa ilustrativa por eliminação de raspagens periódicas nos dutos; não substitui a proposta comercial.</p>
+            </div>
+
+            <button class="btn btn--gold btn--block" type="button" id="calcToQuote"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Enviar dimensionamento para orçamento</button>
+            <p class="sr-only" id="calcLive" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section id="cases" class="section cases theme-dark" aria-labelledby="cases-title">
+      <div class="container">
+        <header class="section__head section__head--center" data-stagger>
+          <p class="eyebrow">Obras e clientes</p>
+          <h2 id="cases-title">Projetos industriais executados</h2>
+          <p class="section__lead">Instalações de referência da Smartech em supermercados, restaurantes e hotéis.</p>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrar projetos" data-reveal="fade">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" class="filter" data-filter="supermercado" aria-pressed="false">Supermercados</button>
+          <button type="button" class="filter" data-filter="restaurante" aria-pressed="false">Restaurantes</button>
+          <button type="button" class="filter" data-filter="hotel" aria-pressed="false">Hotéis e eventos</button>
+        </div>
+
+        <!-- Para usar uma foto real num projeto: coloque o arquivo em assets/cases/ e preencha data-photo (ex.: "assets/cases/carbone.webp") -->
+        <ul class="cases__grid" id="casesGrid" data-stagger>
+          <li class="case" data-category="restaurante">
+            <article class="card spot case__card">
+              <div class="case__media" data-photo="">
+                <svg class="case__art" aria-hidden="true"><use href="#art-airflow"/></svg>
+                <span class="tag">Gastronomia premium</span>
+              </div>
+              <div class="case__body">
+                <h3>Carbone Top Market</h3>
+                <p class="case__meta">Florianópolis / SC · Parrilla e fornos industriais</p>
+                <p>Sistema UV-C completo para controle da gordura de carnes nobres na parrilla.</p>
+                <button type="button" class="btn btn--ghost btn--sm" data-case data-title="Carbone Top Market" data-location="Florianópolis — SC" data-desc="Instalação de coifa central de alta performance com módulos de fotólise UV-C para parrilla, com vazão de 8.500 m³/h." data-specs="Vazão: 8.500 m³/h|Coifa em inox AISI 304|Lâmpadas UV-C 254 nm|Dutos: 18 m">Ver ficha técnica <svg class="icon icon-nudge" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </article>
+          </li>
+
+          <li class="case" data-category="supermercado">
+            <article class="card spot case__card">
+              <div class="case__media" data-photo="">
+                <svg class="case__art" aria-hidden="true"><use href="#art-airflow"/></svg>
+                <span class="tag">Supermercado</span>
+              </div>
+              <div class="case__body">
+                <h3>Giassi Supermercados</h3>
+                <p class="case__meta">Itajaí / SC · Padaria e rotisseria</p>
+                <p>Central de exaustão industrial integrada para rotisseria e fritadeiras de alta demanda.</p>
+                <button type="button" class="btn btn--ghost btn--sm" data-case data-title="Giassi Supermercados" data-location="Itajaí — SC" data-desc="Projeto para área de produção de alimentos com sistema centrífugo trifásico de baixo ruído." data-specs="Vazão: 14.000 m³/h|Filtros defletores laváveis|Automação digital">Ver ficha técnica <svg class="icon icon-nudge" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </article>
+          </li>
+
+          <li class="case" data-category="restaurante">
+            <article class="card spot case__card">
+              <div class="case__media" data-photo="">
+                <svg class="case__art" aria-hidden="true"><use href="#art-airflow"/></svg>
+                <span class="tag">Restaurante</span>
+              </div>
+              <div class="case__body">
+                <h3>Saudoso Restaurante</h3>
+                <p class="case__meta">Chapecó / SC · Cozinha de grande volume</p>
+                <p>Exaustão silenciosa para área urbana densa, com atenuação acústica.</p>
+                <button type="button" class="btn btn--ghost btn--sm" data-case data-title="Saudoso Restaurante" data-location="Chapecó — SC" data-desc="Coifa de parede sob medida com lavador de gases e módulo UV-C para reduzir odores na vizinhança." data-specs="Vazão: 6.200 m³/h|Damper corta-fogo conforme norma|Silenciador acústico 25 dB">Ver ficha técnica <svg class="icon icon-nudge" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </article>
+          </li>
+
+          <li class="case" data-category="hotel">
+            <article class="card spot case__card">
+              <div class="case__media" data-photo="">
+                <svg class="case__art" aria-hidden="true"><use href="#art-airflow"/></svg>
+                <span class="tag">Hotelaria</span>
+              </div>
+              <div class="case__body">
+                <h3>Hotel Majestic</h3>
+                <p class="case__meta">Florianópolis / SC · Centro de eventos e gastronomia</p>
+                <p>Projeto de alta complexidade com exaustão vertical para múltiplos andares.</p>
+                <button type="button" class="btn btn--ghost btn--sm" data-case data-title="Hotel Majestic" data-location="Florianópolis — SC" data-desc="Sistema de alta confiabilidade com exaustor redundante duplo para operação ininterrupta." data-specs="Vazão: 18.000 m³/h|Inox 304 escovado|Controle automático">Ver ficha técnica <svg class="icon icon-nudge" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section id="about" class="section section--slash about theme-light" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <figure class="about__photo">
+          <div class="about__frame" data-reveal="wipe">
+            <img src="assets/socios-smartech.webp" width="872" height="1024" loading="lazy" decoding="async"
+                 alt="Os três sócios da Smartech lado a lado, de camisa preta, dentro de um galpão industrial">
+            <figcaption><strong>Os sócios fundadores</strong><span>Smartech Coifas</span></figcaption>
+          </div>
+        </figure>
+
+        <div class="about__text" data-stagger>
+          <p class="eyebrow">Sobre a Smartech</p>
+          <h2 id="about-title">Engenharia catarinense focada em inovação e segurança alimentar.</h2>
+          <p class="section__lead">Fundada em Florianópolis (SC) pelos especialistas <strong>Mohamed Farag, Marlon Ernande e Rafael Buhl</strong>, a Smartech nasceu para transformar sistemas de exaustão em ativos de alta tecnologia e eficiência energética.</p>
+
+          <ul class="people">
+            <li class="person"><span class="person__icon"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span><strong>Mohamed Farag</strong><small>Direção executiva</small></li>
+            <li class="person"><span class="person__icon"><svg class="icon" aria-hidden="true"><use href="#i-compass"/></svg></span><strong>Marlon Ernande</strong><small>Engenharia de projetos</small></li>
+            <li class="person"><span class="person__icon"><svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg></span><strong>Rafael Buhl</strong><small>Operações e campo</small></li>
+          </ul>
+
+          <div class="commit theme-dark">
+            <div class="commit__head">
+              <span class="commit__icon"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span>
+              <div><h3>Compromisso técnico Smartech</h3><p>Desenvolvimento com responsabilidade ART/CREA</p></div>
+            </div>
+            <p>Cada projeto é dimensionado conforme a norma NBR 14518 da ABNT, o que facilita a aprovação junto ao Corpo de Bombeiros e à vigilância sanitária.</p>
+            <ul class="ticks">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Projetos 100% personalizados, sob medida, em inox AISI 304</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Suporte técnico presencial em todo o estado de Santa Catarina</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Garantia estendida de peças e motores centrífugos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section id="contact" class="section contact theme-dark" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__info" data-stagger>
+          <p class="eyebrow">Solicite seu orçamento</p>
+          <h2 id="contact-title">Fale direto com quem projeta e instala.</h2>
+          <p class="section__lead">Preencha os dados da sua cozinha. Ao enviar, abrimos o WhatsApp com a mensagem pronta para a nossa equipe.</p>
+
+          <ul class="contact__list">
+            <li><a class="contact__item" href="https://wa.me/5548991809488" target="_blank" rel="noopener noreferrer"><span class="contact__icon"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg></span><span><small>WhatsApp comercial</small><strong>(48) 99180-9488</strong></span></a></li>
+            <li><a class="contact__item" href="mailto:contato@smartechcoifas.com"><span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span><span><small>E-mail</small><strong>contato@smartechcoifas.com</strong></span></a></li>
+            <li><a class="contact__item" href="https://www.instagram.com/smartechcoifas" target="_blank" rel="noopener noreferrer"><span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></span><span><small>Instagram</small><strong>@smartechcoifas</strong></span></a></li>
+            <li><div class="contact__item"><span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Sede e atendimento</small><strong>Florianópolis — SC · Atendimento estadual</strong></span></div></li>
+          </ul>
+
+          <figure class="contact__photo" data-reveal="scale">
+            <img src="assets/socios-smartech.webp" width="872" height="1024" loading="lazy" decoding="async" alt="Sócios da Smartech Coifas">
+            <figcaption>Sócios fundadores da Smartech</figcaption>
+          </figure>
+        </div>
+
+        <form class="card contact__form" id="quoteForm" novalidate data-reveal="right" aria-labelledby="form-title">
+          <h3 id="form-title" class="panel__title"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg> Formulário do projeto</h3>
+
+          <div class="form__row">
+            <div class="field"><label for="f-name">Seu nome *</label><input class="input" id="f-name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Ex.: Roberto Silva"><span class="field__error" id="f-name-err" role="alert"></span></div>
+            <div class="field"><label for="f-company">Estabelecimento / empresa</label><input class="input" id="f-company" name="company" type="text" autocomplete="organization" placeholder="Ex.: Restaurante Bella Italia"><span class="field__error"></span></div>
+          </div>
+          <div class="form__row">
+            <div class="field"><label for="f-phone">Telefone / WhatsApp *</label><input class="input" id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(48) 99999-9999"><span class="field__error" id="f-phone-err" role="alert"></span></div>
+            <div class="field"><label for="f-city">Cidade — UF *</label><input class="input" id="f-city" name="city" type="text" autocomplete="address-level2" required placeholder="Ex.: Florianópolis — SC"><span class="field__error" id="f-city-err" role="alert"></span></div>
+          </div>
+          <div class="form__row">
+            <div class="field">
+              <label for="f-type">Tipo de projeto</label>
+              <select class="select" id="f-type" name="type">
+                <option>Coifa UV-C completa</option>
+                <option>Sistema de exaustão padrão</option>
+                <option>Adequação à NBR 14518</option>
+                <option>Manutenção e suporte técnico</option>
+              </select>
+              <span class="field__error"></span>
+            </div>
+            <div class="field"><label for="f-airflow">Vazão calculada <span class="field__hint">(opcional)</span></label><input class="input" id="f-airflow" name="airflow" type="text" placeholder="Ex.: 4.500 m³/h"><span class="field__error"></span></div>
+          </div>
+          <div class="field"><label for="f-notes">Detalhes do equipamento</label><textarea class="textarea" id="f-notes" name="notes" rows="3" placeholder="Descreva os equipamentos da cozinha (chapas, fritadeiras, grelhas) e as dimensões aproximadas…"></textarea></div>
+          <input type="hidden" id="f-calc" name="calc">
+
+          <div class="field check" id="f-consent-wrap">
+            <input type="checkbox" id="f-consent" name="consent" required aria-describedby="f-consent-err">
+            <label for="f-consent">Concordo em enviar estes dados à Smartech para receber o orçamento. <a href="#privacidade" data-open-privacy>Política de privacidade</a></label>
+            <span class="field__error" id="f-consent-err" role="alert"></span>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--gold btn--lg" type="submit"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg> Enviar pelo WhatsApp</button>
+            <button class="btn btn--ghost btn--lg" type="button" id="quoteMail"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Enviar por e-mail</button>
+          </div>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer theme-dark">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#hero" aria-label="Smartech Coifas — voltar ao topo"><span class="brand__plate"><img src="assets/logo-smartech.png" alt="Smartech" width="468" height="195" loading="lazy" decoding="async"></span></a>
+        <p>Coifas industriais sob medida com tecnologia UV-C. Florianópolis — SC.</p>
+      </div>
+      <nav class="footer__col" aria-label="Rodapé: navegação">
+        <h2 class="footer__title">Navegação</h2>
+        <ul><li><a href="#showroom">Visualizador 3D</a></li><li><a href="#uvtech">Tecnologia UV-C</a></li><li><a href="#calculator">Calculadora</a></li><li><a href="#cases">Projetos</a></li><li><a href="#about">Sobre</a></li></ul>
+      </nav>
+      <div class="footer__col">
+        <h2 class="footer__title">Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/5548991809488" target="_blank" rel="noopener noreferrer">(48) 99180-9488</a></li>
+          <li><a href="mailto:contato@smartechcoifas.com">contato@smartechcoifas.com</a></li>
+          <li><a href="https://www.instagram.com/smartechcoifas" target="_blank" rel="noopener noreferrer">Instagram @smartechcoifas</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Smartech Coifas. Todos os direitos reservados.</p>
+      <p><button type="button" class="link" data-open-privacy>Política de privacidade</button> · Projetos conforme NBR 14518</p>
+    </div>
+  </footer>
+
+  <a class="fab" id="fab" href="https://wa.me/5548991809488" target="_blank" rel="noopener noreferrer" aria-label="Falar com a Smartech no WhatsApp">
+    <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <!-- Diálogo: ficha técnica do projeto -->
+  <dialog class="dialog" id="caseDialog" aria-labelledby="caseTitle">
+    <div class="dialog__panel">
+      <button type="button" class="dialog__close" data-close aria-label="Fechar"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <span class="tag" id="caseLocation">Localização</span>
+      <h3 id="caseTitle">Título do projeto</h3>
+      <p id="caseDesc"></p>
+      <ul class="dialog__specs" id="caseSpecs"></ul>
+      <a class="btn btn--gold btn--block" href="#contact" data-close>Solicitar projeto similar</a>
+    </div>
+  </dialog>
+
+  <!-- Diálogo: política de privacidade (texto resumido; revisar com o jurídico antes de publicar) -->
+  <dialog class="dialog" id="privacidade" aria-labelledby="privacyTitle">
+    <div class="dialog__panel">
+      <button type="button" class="dialog__close" data-close aria-label="Fechar"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+      <h3 id="privacyTitle">Política de privacidade</h3>
+      <p>Este site não possui banco de dados e não armazena o que você digita no formulário. Ao enviar, o seu navegador abre o WhatsApp (ou o seu aplicativo de e-mail) com a mensagem preenchida, e ela só segue para a Smartech se você confirmar o envio.</p>
+      <p>Nome, empresa, telefone, cidade e detalhes do projeto são usados exclusivamente para responder ao seu pedido de orçamento. Depois do contato, ficam registrados na conversa de WhatsApp ou e-mail da Smartech, e você pode pedir a exclusão a qualquer momento em contato@smartechcoifas.com.</p>
+      <p>As fontes tipográficas (Google Fonts) e as bibliotecas de animação (cdnjs e jsDelivr) são entregues por servidores de terceiros, que podem registrar o seu endereço IP.</p>
+      <button type="button" class="btn btn--gold btn--block" data-close>Entendi</button>
+    </div>
+  </dialog>
+</body>
+</html>
